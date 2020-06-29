@@ -69,17 +69,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### Using SASS
 
-`npm install sass-loader node-sass --save-dev`
+### `npm install sass-loader node-sass --save-dev`
 
  Adding Sass to your create-react-app project will require you to execute the eject command.  Also from the root of the project:
  
- `npm run eject`
+###  `npm run eject`
  
  After the command completes successfully, locate the config folder which contains the two WebPack configuration files.  Each of these files corresponds to a specific development environment - dev (development) or prod (production).  Open the webpack.config.dev.js configuration file and find the loaders block in the module block.
 
  In WebPack, loaders (loaders, loaders) allow developers to do "pre-processing (pre-process)" before they are needed or will be loaded.  create-react-app uses many boot loaders to handle various build tasks, such as transpiling with babel, and automatic prefixing with PostCSS.  In order to connect Sass to your project, you need to add a loader that can process Sass files.
 
- The beginning of the loaders block should look something like this:
+ ### The beginning of the loaders block should look something like this:
  
  `loaders: [
   // Process JS with Babel.
@@ -91,20 +91,30 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
   },
   ...`
   
-  After starting the loaders array, you can add your loader.  The Sass bootloader that we installed can process both Sass and Scss files.
+  # After starting the loaders array, you can add your loader.  The Sass bootloader that we installed can process both Sass and Scss files.
 
- For Sass:
+ ## For Sass:
+ 
+ 
 ` {
   test: /\.sass$/,
   include: paths.appSrc,
   loaders: ["style", "css", "sass"]
 },`
-For Scss:
+
+
+## For Scss:
+
+
 `{
   test: /\.scss$/,
   include: paths.appSrc,
   loaders: ["style", "css", "sass"]
 },`
-Now that the Sass bootloader is in place, you can use Sass files.  For example, in the App.js component, which comes by default with create-react-app, you can write:
-   `import './App.sass';`
+
+Now that the Sass bootloader is in place, you can use Sass files. 
+For example, in the App.js component, which comes by default with create-react-app, you can write:
+
+###   `import './App.sass';`
+
 Please note that you must also rename your App.css file to App.sass.
