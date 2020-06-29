@@ -4,7 +4,11 @@ import map from '../assets/img/map.png';
 import phone_icon from '../assets/img/phone_icon.png';
 import clock_icon from '../assets/img/clock_icon.png';
 import icon_sign from '../assets/img/icon_sign.png';
-import bg_girl from '../assets/img/bg_girl.png'
+import bg_girl from '../assets/img/bg_girl.png';
+import wave from '../assets/img/wave.png';
+import branch from '../assets/img/branch.png'
+import BtnLookMap from "./BtnLookMap";
+
 
 
 //MORE EASY CHANGE MAIN BG
@@ -64,9 +68,7 @@ function MainPage() {
                                                     <div className="title">Мы находимся в центре:</div>
                                                     <div className="address">г. Брест, ул. Гоголя, д.65</div>
                                                 </div>
-                                                <div className="text__look">
-                                                    <span>Смотреть на карте</span>
-                                                </div>
+                                                <BtnLookMap/>
                                             </div>
                                         </div>
                                         {/*3--------------------------------main__contact-----------------------------------*/}
@@ -121,7 +123,7 @@ function MainPage() {
                                         </div>
                                         <div className="menu menu_body">
                                             <ul className="menu__list">
-                                                <li><a href=""className="menu__link_main">Главная</a></li>
+                                                <li><a href=""className="menu__link">Главная</a></li>
                                                 <li><a href=""className="menu__link">Шугаринг и депиляция воском</a></li>
                                                 <li><a href=""className="menu__link">Антицеллюлитный массаж</a></li>
                                                 <li><a href=""className="menu__link">Классический массаж</a></li>
@@ -138,7 +140,30 @@ function MainPage() {
                             </header>
                             <div className="main-content">
                                 <div className="main-content__title">
-
+                                    <div className="large">
+                                        Хотите избавиться от
+                                        нежелательных волос
+                                        или нужен сеанс
+                                        антицеллюлитного массажа?
+                                    </div>
+                                    <div className="details">
+                                        <div className="small-title">депиляция воском и Шугаринг;</div>
+                                        <div className="small-title">профессиональные сертифицированные мастера;</div>
+                                        <div className="small-title">работаем и с женщинами, и с мужчинами;</div>
+                                        <div className="small-title">результат уже после первой процедуры.</div>
+                                    </div>
+                                    <div className="btn-page">
+                                    <div className="btn-content">
+                                        <div className="btn-content__title">ПОЛУЧИТЬ КАРТУ КЛИЕНТА БЕСПЛАТНО</div>
+                                        <div className="btn-content__img">
+                                            <img
+                                                src={branch}
+                                                alt="branch"
+                                                className=""
+                                            />
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
                                 <div className="main-content__img">
                                     <img
@@ -146,6 +171,15 @@ function MainPage() {
                                         alt="bg_girl"
                                         className=""
                                     />
+                                </div>
+                            </div>
+                            <div className="content-footer">
+                                <div className="main-content__wave">
+                                <img
+                                src={wave}
+                                alt="wave"
+                                className=""
+                                />
                                 </div>
                             </div>
                         </div>
