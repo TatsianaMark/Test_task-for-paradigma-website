@@ -91,7 +91,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
   },
   ...`
   
-  # After starting the loaders array, you can add your loader.  The Sass bootloader that we installed can process both Sass and Scss files.
+ After starting the loaders array, you can add your loader.  The Sass bootloader that we installed can process both Sass and Scss files.
 
  ## For Sass:
  
